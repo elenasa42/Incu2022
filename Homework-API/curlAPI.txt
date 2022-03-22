@@ -1,0 +1,31 @@
+curl commands to obtain list of clients from DNA
+
+curl --location --request POST 'https://sandboxdnac.cisco.com/api/system/v1/auth/token' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE=' \
+--data-raw ' {
+ "username" : "devnetuser",
+ "password" : "Cisco123!"
+ }'
+
+curl --location --request GET 'https://sandboxdnac.cisco.com/api/v1/network-device' \
+--header 'x-auth-token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGVjNGU0ZjRjYTdmOTIyMmM4MmRhNjYiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjVlOGU4OTZlNGQ0YWRkMDBjYTJiNjQ4ZSJdLCJ0ZW5hbnRJZCI6IjVlOGU4OTZlNGQ0YWRkMDBjYTJiNjQ4NyIsImV4cCI6MTY0Nzc3ODI4MiwiaWF0IjoxNjQ3Nzc0NjgyLCJqdGkiOiI3MDAxNmRjYy1mZjIyLTQ0OTktYjIyMi0wYTA0OGUxYjc1NDgiLCJ1c2VybmFtZSI6ImRldm5ldHVzZXIifQ.HFyX9oVOR_ohFeWS5hjq60oJO1dX9OERWbM6h4GtcDoTYVpAJogeggG3boStqpcPJ3SgJS7GhLcmSjOVHfyRjgYyDrkLDIs6pl05limQr2I9-Fmnp_7dQlY8j5R3xwywITxht9BFO9bfSC58z7_CLXIRN2h-Q1oZ8at84pUgypaHCB3tqn7kc3HNf7zG_tQEx8O_nXYVB2TS1RuavLlYpUo0nToRjDKlIgwFE178SbbI5rE3FssSdgNic00xgjvc5AOcQP6YOwm6m8ckrnoT-I_EFioMkCDa8u-uRljvQRwN4xwIDDYPCuZ3pxeBz5eZLujXyYxrMflJ8yiSwACEew' \
+--header 'Authorization: Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE='
+ 
+curl --location --request GET 'https://sandboxdnac.cisco.com/dna/intent/api/v1/client-health' \
+--header 'x-auth-token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGVjNGU0ZjRjYTdmOTIyMmM4MmRhNjYiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjVlOGU4OTZlNGQ0YWRkMDBjYTJiNjQ4ZSJdLCJ0ZW5hbnRJZCI6IjVlOGU4OTZlNGQ0YWRkMDBjYTJiNjQ4NyIsImV4cCI6MTY0Nzc3ODI4MiwiaWF0IjoxNjQ3Nzc0NjgyLCJqdGkiOiI3MDAxNmRjYy1mZjIyLTQ0OTktYjIyMi0wYTA0OGUxYjc1NDgiLCJ1c2VybmFtZSI6ImRldm5ldHVzZXIifQ.HFyX9oVOR_ohFeWS5hjq60oJO1dX9OERWbM6h4GtcDoTYVpAJogeggG3boStqpcPJ3SgJS7GhLcmSjOVHfyRjgYyDrkLDIs6pl05limQr2I9-Fmnp_7dQlY8j5R3xwywITxht9BFO9bfSC58z7_CLXIRN2h-Q1oZ8at84pUgypaHCB3tqn7kc3HNf7zG_tQEx8O_nXYVB2TS1RuavLlYpUo0nToRjDKlIgwFE178SbbI5rE3FssSdgNic00xgjvc5AOcQP6YOwm6m8ckrnoT-I_EFioMkCDa8u-uRljvQRwN4xwIDDYPCuZ3pxeBz5eZLujXyYxrMflJ8yiSwACEew' \
+--header 'Authorization: Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE='
+
+____________________________________________________________________________________________________________________
+
+curl commands to obtain list of hosts in Meraki
+
+curl --location --request GET 'https://api.meraki.com/api/v0/organizations' \
+--header 'X-Cisco-Meraki-API-Key: 6bec40cf957de430a6f1f2baa056b99a4fac9ea0'
+
+curl --location --request GET 'https://api.meraki.com/api/v0/organizations/681155/networks' \
+--header 'X-Cisco-Meraki-API-Key: 6bec40cf957de430a6f1f2baa056b99a4fac9ea0'
+
+curl --location --request GET 'https://api.meraki.com/api/v0/organizations/681155/networks/L_566327653141843049/merakiAuthUsers' \
+--header 'X-Cisco-Meraki-API-Key: 6bec40cf957de430a6f1f2baa056b99a4fac9ea0'
+
