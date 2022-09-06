@@ -1,18 +1,3 @@
-"""
-Python Project (Cisco Incubator 2018)
-
-Constributors:
-- Boriychuk Dima
-- Gain Gaulthier
-
-Libs used:
-- https://docs.python.org/2/library/re.html
-- https://docs.python.org/3/library/ipaddress.html
-- https://docs.python.org/2/library/sys.html
-- https://networkx.github.io
-- https://matplotlib.org
-"""
-
 import re
 import ipaddress
 import sys
