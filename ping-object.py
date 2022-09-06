@@ -1,15 +1,3 @@
-"""
-Python Project (Cisco Incubator 2018)
-    
-Constributors:
-- Boriychuk Dima
-- Gain Gaulthier
-
-Libs used:
-- https://docs.python.org/2/library/re.html
-- https://docs.python.org/2/library/subprocess.html
-"""
-
 import re
 import subprocess
 
