@@ -1,14 +1,3 @@
-"""
-Python Project (Cisco Incubator 2018)
-
-Constributors:
-- Boriychuk Dima
-- Gain Gaulthier
-
-Libs used:
-- https://docs.python.org/2/library/webbrowser.html
-- https://docs.python.org/2/library/os.html
-"""
 import webbrowser
 import os
 
