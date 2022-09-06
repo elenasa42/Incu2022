@@ -1,17 +1,3 @@
-"""
-Python Project (Cisco Incubator 2018)
-
-Constributors:
-- Boriychuk Dima
-- Gain Gaulthier
-
-Libs used:
-- https://docs.python.org/2/library/re.html
-- https://github.com/ktbyers/netmiko
-- https://docs.python.org/2/library/json.html
-- https://docs.python.org/2/library/threading.html
-- http://docs.python-requests.org/en/master/
-"""
 from netmiko import ConnectHandler
 from netmiko.ssh_exception import NetMikoAuthenticationException
 import re
